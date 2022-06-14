@@ -1,0 +1,37 @@
+{{#data.basics}}
+<section class="basics">
+  <div class="basics__photo basics__row">
+  </div>
+  <div class="basics__main basics__row">
+    {{#if name}}
+    <div class="basics__main__name title-color">
+      {{name}}
+    </div>
+    {{/if}}
+    {{#if label}}
+    <div class="basics__main__position title-color">
+      {{label}}
+    </div>
+    {{/if}}
+  </div>
+  <div class="basics__additional basics__row">
+    <!--{{#if phone}}
+      <div class="basics__additional__item">
+        {{phone}}
+      </div>
+      {{/if}}
+      {{#if email}}
+      <div class="basics__additional__item">
+      {{email}}
+      </div>
+      {{/if}}
+      {{#location}}
+      {{#if city}}
+      <div class="basics__additional__item">
+      {{city}}, {{countryCode}}
+      </div>
+      {{/if}}
+      {{/location}}-->
+  </div>
+</section>
+{{/data.basics}}

@@ -1,0 +1,22 @@
+{{#if data.skills.length}}
+<section class="skills">
+  <div class="page__left__title title-color">Skills</div>
+  {{#each data.skills}}
+  {{#if level}}
+  <div class="skills__levels__wrapper">
+    <div>{{name}} {{level}}/5</div>
+    <div class="skills__levels-line__wrapper skills__levels-line__wrapper-{{level}}">
+      <div class="skills__levels__level"></div>
+      <div class="skills__levels__level"></div>
+      <div class="skills__levels__level"></div>
+      <div class="skills__levels__level"></div>
+      <div class="skills__levels__level"></div>
+    </div>
+  </div>
+  {{else}}
+  {{name}}
+  {{#unless @last}},{{/unless}} 
+  {{/if}}
+  {{/each}}
+</section>
+{{/if}}

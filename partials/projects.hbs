@@ -1,8 +1,8 @@
-{{#if data.work.length}}
+{{#if data.projects.length}}
 <section id="work">
   <div class="work__title">Projects </div>
-  {{#each data.work}}
-  {{#if company}}
+  {{#each data.projects}}
+  {{#if name}}
   <div class="work">
     <div class="work__date">
       <div class="work__date__round"></div>
@@ -24,7 +24,7 @@
     </div>
     <div class="work__main">
       <div class="work__company title-color">
-        {{company}}
+        {{name}}
       </div>
       <div class="work__summary">
         {{{summary}}}

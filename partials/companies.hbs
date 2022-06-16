@@ -1,0 +1,24 @@
+{{#if data.companies.length}}
+<section id="interests">
+  <div class="page__left__title title-color">Professional Experience</div>
+  {{#each data.companies}}
+  <div>
+    {{name}} - {{position}}
+    {{#if startDate}}
+    <span class="startDate">
+    {{startDate}} -
+    </span>
+    {{/if}}
+    {{#if endDate}}
+    <span class="endDate">
+    {{endDate}}
+    </span>
+    {{else}}
+    <span class="endDate">
+    Present
+    </span>
+    {{/if}}
+  </div>
+  {{/each}}
+</section>
+{{/if}}

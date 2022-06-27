@@ -108,6 +108,7 @@ p {
   height: 100px;
   width: 150px;
   object-fit: cover;
+  border-radius: 22px;
 }
 
 .basics__row {

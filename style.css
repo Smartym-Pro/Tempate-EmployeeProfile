@@ -95,12 +95,19 @@ p {
   height: 150px;
   display: flex;
 }
-
+.basics__photo-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 27px;
+  position: relative;
+}
 .basics__photo {
-  height: 150px;
+  height: 100px;
   width: 150px;
-  object-fit: contain;
-  margin: auto;
+  object-fit: cover;
 }
 
 .basics__row {

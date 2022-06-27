@@ -29,9 +29,12 @@
       <div class="work__summary">
         {{{description}}}
       </div>
-      {{#if position}}
+      {{#if roles.length}}
       <div class="work__position title-color">
-        <span>Responsibilities: </span> {{position}}.
+        <span>Responsibilities:</span>
+        {{#each roles}}
+        <span>{{this}}</span>{{#unless @last}},{{/unless}}
+        {{/each}}.
       </div>
       {{/if}}
     </div>

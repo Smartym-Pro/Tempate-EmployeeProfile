@@ -1,6 +1,9 @@
 {{#data.basics}}
 <section class="basics">
-  <div class="basics__photo basics__row">
+  <div class="basics__row">
+    {{#if image}}
+    <img class="basics__photo" src="{{{image}}}">
+    {{/if}}
   </div>
   <div class="basics__main basics__row">
     {{#if name}}

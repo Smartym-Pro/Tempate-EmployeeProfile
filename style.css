@@ -96,8 +96,16 @@ p {
   display: flex;
 }
 
+.basics__photo {
+  height: 150px;
+  width: 150px;
+  object-fit: contain;
+  margin: auto;
+}
+
 .basics__row {
   flex: 1;
+  position: relative;
 }
 
 .basics__main {
